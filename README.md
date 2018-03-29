@@ -44,10 +44,9 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, foreign_key: true|
+|name|string|null: false|
 
 ### Association
 - has_many :massages
 - has_many :members
 - has_many :users, through: :members
-- accepts_nested_attributes_for :group_users
