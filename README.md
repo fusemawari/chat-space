@@ -9,7 +9,7 @@
 |password|integer|null: false|
 
 ### Association
-- has_many :massages
+- has_many :messages
 - has_many :members
 - has_many :groups, through: :members
 
@@ -26,7 +26,7 @@
 - belongs_to :user
 
 
-## massagesテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -47,6 +47,6 @@
 |name|string|null: false|
 
 ### Association
-- has_many :massages
+- has_many :messages
 - has_many :members
 - has_many :users, through: :members
