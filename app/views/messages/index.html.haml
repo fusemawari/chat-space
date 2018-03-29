@@ -1,0 +1,59 @@
+!!!
+%html{lang: "ja"}
+  %head
+    %meta{charset: "utf-8"}
+  %body
+    /%p= print_information
+    /= render :partial => "sidebar"
+    .notification
+    .container
+      .container-left
+        .header
+          %h1 name
+          %a
+          %i.far.fa-edit
+          %a
+            %i.fa.fa-cog.icon
+        .groups
+          .groups__inner
+            %h3 group-name
+            %p 最新メッセージorまだメッセージがありません。
+          .groups__inner
+            %h3 group-name
+            %p 最新メッセージorまだメッセージがありません。
+          .groups__inner
+            %h3 group-name
+            %p 最新メッセージorまだメッセージがありません。
+      .container-right
+        .header
+          %h2 Sampleグループ
+          %p member..........
+        .messages.js-messages
+          .messages__inner
+            %p<
+              名前
+              %span<
+                20180101
+            %p チャット内容
+          .messages__inner
+            %p<
+              名前
+              %span<
+                20180101
+            %p チャット内容
+          .messages__inner
+            %p<
+              名前
+              %span<
+                20180101
+            %p チャット内容
+        .form
+          %input{:name => "", :value => " 文字入力"}
+          %a{ :href => 'http://google.co.jp', :id => 'anchor1' }
+            %i.far.fa-images
+          %a.submit SEND
+
+
+
+
+
