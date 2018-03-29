@@ -37,7 +37,7 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :members
+- belongs_to :member
 
 
 ## groupsテーブル
