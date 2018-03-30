@@ -7,38 +7,50 @@ body {height: 100%;}
   height: 100%;
   width: 300px;
   .header {
-    background-color: #253141;
+    background-color: #090c10;
     color: white;
     font-size: 16px;
     font-weight: bold;
     float: left;
+    height: calc(15% + 2px);
     padding: 0 20px 0;
+    position: relative;
     width: 260px;
     h1 {
-      line-height: 100px;
       float: left;
+      font-weight: bold;
+      position: absolute;
+      top: 37%;
       width: 215px;
     }
     i {
-      line-height: 100px;
+      position: absolute;
+      top: 41%;
+      right: 13%
     }
+    a
+      i {
+        position: absolute;
+        top: 41%;
+        right: 5%
+      }
   }
   .groups {
-    background-color: #2f3e51;
+    background-color: #253141;
     height:calc(100% - 100px);
     margin-top: 100px;
     padding: 20px 20px 0;
     width: 260px;
-    div {
+    &__item {
       margin-bottom: 40px;
     }
       h3 {
-        color: #fff;
+        color: $WhiteColor;
         font-size: 15px;
         padding-bottom: 5px;
       }
       p {
-        color: #fff;
+        color: $WhiteColor;
         font-size: 11px;
       }
   }
@@ -48,26 +60,35 @@ body {height: 100%;}
   height: 100%;
   width: calc(100% - 300px);
   .header {
-    border-bottom: 2px solid #eee;
-    border-top: 2px solid #eee;
-    height: 96px;
+    border: 1px solid #eee;
+    height: 15%;
     padding-left: 40px;
+    position: relative;
     h2 {
       color: #333;
       font-size: 20px;
-      padding: 27px 0 0 0;
+      font-weight:bold;
+      padding: 35px 0 15px 0;
     }
     p {
       color: #999;
       font-size: 12px;
-
     }
+      .header__edit {
+        border: 1px solid $mainBlueColor;
+        padding: 12.5px 20px;
+        position: absolute;
+        top: 28px;
+        right: 40px;
+          p {
+             color: $mainBlueColor;
+          }
+      }
   }
   .messages {
-    background-color: #aaaaaa;
-    height: calc(100% - 236px);
+    height: calc(100vh - 15% - 138px);
     padding: 46px 0 0 40px;
-    .messages__inner {
+    &__item {
       margin-bottom: 40px;
       p:nth-child(1) {
         color: #434A54;
@@ -89,11 +110,33 @@ body {height: 100%;}
     }
   }
   .form {
-    background-color: #38AEF0;
-    height: 90px;
-    input {
+    background-color: #B8C3C7;
+    height: 50px;
+    padding:20px 40px 20px 0;
+    &__message {
+      border: none;
+      color: #434a54;
+      font-size: 16px;
+      height: 50px;
       margin-left: 40px;
-
+      margin-right: -5px;
+      width: calc(100% - 196px)
+    }
+    label {
+      background-color: $WhiteColor;
+      padding: 17px 11px;
+      input {
+      display: none;
+      }
+    }
+    &__summit {
+      background-color: $mainBlueColor;
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      padding: 13px 0px;
+      color: $WhiteColor;
+      margin-left: 10px;
     }
   }
 }
