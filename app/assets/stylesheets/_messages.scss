@@ -16,7 +16,7 @@ body {height: 100%;}
     padding: 0 20px 0;
     position: relative;
     width: 260px;
-    h1 {
+    &__ttl {
       float: left;
       font-weight: bold;
       position: absolute;
@@ -41,15 +41,15 @@ body {height: 100%;}
     margin-top: 100px;
     padding: 20px 20px 0;
     width: 260px;
-    &__item {
+    &__list {
       margin-bottom: 40px;
     }
-      h3 {
+      dt {
         color: $WhiteColor;
         font-size: 15px;
         padding-bottom: 5px;
       }
-      p {
+      dd {
         color: $WhiteColor;
         font-size: 11px;
       }
@@ -64,13 +64,13 @@ body {height: 100%;}
     height: 15%;
     padding-left: 40px;
     position: relative;
-    h2 {
+    .group-ttl {
       color: #333;
       font-size: 20px;
       font-weight:bold;
       padding: 35px 0 15px 0;
     }
-    p {
+    .group_member {
       color: #999;
       font-size: 12px;
     }
@@ -88,20 +88,20 @@ body {height: 100%;}
   .messages {
     height: calc(100vh - 15% - 138px);
     padding: 46px 0 0 40px;
-    &__item {
+    &__list {
       margin-bottom: 40px;
-      p:nth-child(1) {
+      dt {
         color: #434A54;
         font-size: 16px;
         font-weight: bold;
         padding-bottom: 10px;
       }
-        span {
+        &__date {
           color: #999999;
           font-size: 12px;
           padding-left: 10px;
         }
-      p:nth-child(2) {
+      dd {
         color: #434A54;
         font-size: 14px;
         font-weight: bold;
