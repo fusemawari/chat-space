@@ -43,12 +43,12 @@ body {height: 100%;}
     padding: 20px 20px 0;
     width: 260px;
     &__list {
-      &__name {
+      .groups__name {
         color: $WhiteColor;
         font-size: 15px;
         padding-bottom: 5px;
       }
-      &__message {
+      .groups__message {
         color: $WhiteColor;
         font-size: 11px;
       }
@@ -90,13 +90,13 @@ body {height: 100%;}
     padding: 46px 0 0 40px;
     margin-bottom: 40px;
     &__list {
-      &__name {
+      .messages__name {
         color: #434A54;
         font-size: 16px;
         font-weight: bold;
         padding-bottom: 10px;
       }
-      &__date {
+      .messages__date {
         color: #999999;
         font-size: 12px;
         padding-left: 10px;
