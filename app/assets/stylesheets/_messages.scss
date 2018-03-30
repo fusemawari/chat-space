@@ -12,7 +12,7 @@ body {height: 100%;}
     font-size: 16px;
     font-weight: bold;
     float: left;
-    height: calc(15% + 2px);
+    height: 100px;
     padding: 0 20px 0;
     position: relative;
     width: 260px;
@@ -37,7 +37,7 @@ body {height: 100%;}
   }
   .groups {
     background-color: #253141;
-    height:calc(100% - 100px);
+    height:calc(100% - 120px);
     margin-top: 100px;
     margin-bottom: 40px;
     padding: 20px 20px 0;
@@ -61,7 +61,7 @@ body {height: 100%;}
   width: calc(100% - 300px);
   .header {
     border: 1px solid #eee;
-    height: 15%;
+    height: 98px;
     padding-left: 40px;
     position: relative;
     .group-ttl {
@@ -86,7 +86,7 @@ body {height: 100%;}
       }
   }
   .messages {
-    height: calc(100vh - 15% - 178px);
+    height: calc(100vh - 15% - 171px);
     padding: 46px 0 0 40px;
     margin-bottom: 40px;
     &__list {
