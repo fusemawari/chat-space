@@ -71,3 +71,7 @@ gem 'erb2haml'
 gem 'font-awesome-rails'
 gem 'font-awesome-sass'
 
+#pryのgem
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'pry-doc'
