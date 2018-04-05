@@ -39,7 +39,7 @@ body {height: 100%;}
   .groups {
     background-color: #253141;
     height:calc(100% - 120px);
-    margin-top: 100px;
+    margin-top:0px;
     padding: 20px 20px 0;
     width: 260px;
     &__list {
@@ -57,7 +57,7 @@ body {height: 100%;}
 }
 .container-right {
   float: left;
-  height: 100%;
+  height: calc(100% - 185px);
   width: calc(100% - 300px);
   .header {
     border: 1px solid #eee;
@@ -110,7 +110,7 @@ body {height: 100%;}
     }
   }
   .form {
-    background-color: #B8C3C7;
+    background-color: #B8C3C7 !important;
     height: 50px;
     padding:20px 40px 20px 0;
     &__message {
@@ -120,7 +120,8 @@ body {height: 100%;}
       height: 50px;
       margin-left: 40px;
       margin-right: -5px;
-      width: calc(100% - 196px)
+      width: calc(100% - 196px);
+      padding-left: 10px;
     }
     label {
       background-color: $WhiteColor;

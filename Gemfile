@@ -75,3 +75,7 @@ gem 'font-awesome-sass'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'pry-doc'
+
+#画像のアップロード
+gem 'carrierwave'
+gem 'mini_magick'
