@@ -115,3 +115,44 @@
     border: 0;
   }
 }
+.form {
+    background-color: #B8C3C7;
+    height: 65px;
+    padding: 20px 40px 0px 0;
+    float: left;
+    width: calc(100% - 340px);
+    &__message {
+      border: none;
+      color: #434a54;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 20px;
+      margin-right: -6px;
+      width: calc(100% - 196px);
+      padding-left:10px;
+    }
+    .field_with_errors {
+      display:inline;
+    }
+    label {
+      background-color: $WhiteColor;
+      padding: 16px 12px 18px 12px;
+      input {
+      display: none;
+      }
+    }
+    &__summit {
+      background-color: $mainBlueColor;
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      padding: 13px 0px;
+      color: $WhiteColor;
+      margin-left: 10px;
+    }
+    .new_message {
+      .form__mask {
+        display: inline;
+      }
+    }
+  }

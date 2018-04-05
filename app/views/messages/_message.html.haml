@@ -1,9 +1,11 @@
 %ul.messages.js-messages
   %li.messages__list
     %span.messages__name
-      名前
+      = message.user.name
     %span.messages__date
-      2018/01/01 10:20:13
+      = message.created_at
   %li.messages__list
-    %span.messages__list__message
-      チャット内容
+    - if message.content.present?
+      %span.messages__list__message
+        = message.content
+      = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
