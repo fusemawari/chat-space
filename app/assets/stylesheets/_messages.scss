@@ -1,6 +1,7 @@
 html {height: 100%;}
 body {height: 100%;}
 .container {height: 100%;}
+.wrapper {height:100%;}
 
 .container-left {
   float: left;
@@ -57,8 +58,12 @@ body {height: 100%;}
 }
 .container-right {
   float: left;
-  height: calc(100% - 185px);
+  height: calc(100% - 85px);
   width: calc(100% - 300px);
+  .message {
+    overflow-y: scroll;
+    height: 84.5%;
+  }
   .header {
     border: 1px solid #eee;
     height: 98px;
@@ -86,8 +91,7 @@ body {height: 100%;}
       }
   }
   .messages {
-    height: calc(100vh - 15% - 171px);
-    padding: 46px 0 0 40px;
+    padding: 36px 0 0 30px;
     margin-bottom: 40px;
     &__list {
       .messages__name {
@@ -106,6 +110,9 @@ body {height: 100%;}
         font-size: 14px;
         font-weight: bold;
         padding-bottom: 10px;
+        img {
+          display:block;
+        }
       }
     }
   }
@@ -125,19 +132,19 @@ body {height: 100%;}
     }
     label {
       background-color: $WhiteColor;
-      padding: 17px 11px;
+      padding: 17px 12px;
       input {
       display: none;
       }
     }
-    &__summit {
+  }
+}
+    .form__submit {
       background-color: $mainBlueColor;
       display: inline-block;
       width: 100px;
       text-align: center;
-      padding: 13px 0px;
+      padding: 12px 0px;
       color: $WhiteColor;
       margin-left: 10px;
     }
-  }
-}
