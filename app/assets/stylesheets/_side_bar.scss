@@ -8,6 +8,7 @@
     height: 100px;
     line-height: 100px;
     padding: 0 20px;
+    float:left;
     &__name {
       display: inline-block;
       font-size: $side_header_font;
@@ -30,6 +31,7 @@
     background-color: $side_blue_light;
     height: calc(100% - 0px);
     padding: 0 20px;
+    float: left;
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
