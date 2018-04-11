@@ -59,6 +59,10 @@ body {height: 100%;}
   float: left;
   height: calc(100% - 185px);
   width: calc(100% - 300px);
+  .message {
+    overflow-y: scroll;
+    height: 100%;
+  }
   .header {
     border: 1px solid #eee;
     height: 98px;
@@ -86,7 +90,6 @@ body {height: 100%;}
       }
   }
   .messages {
-    height: calc(100vh - 15% - 171px);
     padding: 46px 0 0 40px;
     margin-bottom: 40px;
     &__list {
