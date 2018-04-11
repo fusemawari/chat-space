@@ -1,6 +1,5 @@
 $(function(){
   function buildHTML(message){
-    var image_url = (message.image_url)? `<image class="lower-message_image" src="${message.image_url}">`:"";
     var html = `<ul class="messages">
                   <li class="messages__list">
                     <span class="messages__name">${ message.name }
@@ -37,7 +36,7 @@ $(function(){
     .fail(function(data){
       alert('入力してください');
       $(".form__submit").attr("disabled",false);
-    })
+    });
   });
 });
 

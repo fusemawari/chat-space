@@ -1,6 +1,7 @@
 html {height: 100%;}
 body {height: 100%;}
 .container {height: 100%;}
+.wrapper {height:100%;}
 
 .container-left {
   float: left;
@@ -131,19 +132,19 @@ body {height: 100%;}
     }
     label {
       background-color: $WhiteColor;
-      padding: 17px 11px;
+      padding: 17px 12px;
       input {
       display: none;
       }
     }
-    &__summit {
+  }
+}
+    .form__submit {
       background-color: $mainBlueColor;
       display: inline-block;
       width: 100px;
       text-align: center;
-      padding: 13px 0px;
+      padding: 12px 0px;
       color: $WhiteColor;
       margin-left: 10px;
     }
-  }
-}
