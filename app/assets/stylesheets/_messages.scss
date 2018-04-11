@@ -90,7 +90,7 @@ body {height: 100%;}
       }
   }
   .messages {
-    padding: 46px 0 0 40px;
+    padding: 36px 0 0 30px;
     margin-bottom: 40px;
     &__list {
       .messages__name {
@@ -109,6 +109,9 @@ body {height: 100%;}
         font-size: 14px;
         font-weight: bold;
         padding-bottom: 10px;
+        img {
+          display:block;
+        }
       }
     }
   }
