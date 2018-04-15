@@ -40,12 +40,12 @@ $(function(){
   });
   function update(){
     var url = window.location.pathname;
-    if(url.match(/\/groups\/\d\/messages/)){
-    var message_id = $('.messages__list').last(0).attr('id');
+    if (url.match(/\/groups\/\d\/messages/)){
+    var messageId = $('.messages__list').last(0).attr('id');
     $.ajax({
       url: url,
       type: 'GET',
-      data: {id: message_id},
+      data: {id: messageId},
       dataType: 'json',
     })
     .done(function(messages){
@@ -53,10 +53,10 @@ $(function(){
         messages.forEach(function(message){
           var html = buildHTML(message);
           $('.message').append(html);
+          return false
         });
       }
       $('.message').animate({scrollTop: $('.message')[0].scrollHeight}, 1);
-      return false
     })
     .fail(function(){
       alert('error');
