@@ -39,11 +39,10 @@ $(function(){
     });
   });
   function update(){
-    var url = window.location.pathname;
-    if (url.match(/\/groups\/\d\/messages/)){
+    if (location.href.match(/\/groups\/\d\/messages/)){
     var messageId = $('.messages__list').last(0).attr('id');
     $.ajax({
-      url: url,
+      url: location.href,
       type: 'GET',
       data: {id: messageId},
       dataType: 'json',
