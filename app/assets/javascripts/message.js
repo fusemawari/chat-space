@@ -38,5 +38,29 @@ $(function(){
       $(".form__submit").attr("disabled",false);
     });
   });
+  function update(){
+    if (location.href.match(/\/groups\/\d\/messages/)){
+    var messageId = $('.messages__list').last(0).attr('id');
+    $.ajax({
+      url: location.href,
+      type: 'GET',
+      data: {id: messageId},
+      dataType: 'json',
+    })
+    .done(function(messages){
+      if (messages.length !== 0){
+        messages.forEach(function(message){
+          var html = buildHTML(message);
+          $('.message').append(html);
+          return false
+        });
+      }
+      $('.message').animate({scrollTop: $('.message')[0].scrollHeight}, 1);
+    })
+    .fail(function(){
+      alert('error');
+    })
+  }
+}
+setInterval(update, 5000);
 });
-
