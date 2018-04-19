@@ -472,7 +472,7 @@ DEPENDENCIES
   erb2haml
   factory_bot_rails
   faker
-  fog
+  fog (~> 2.0)
   font-awesome-rails
   font-awesome-sass
   haml-rails
