@@ -91,4 +91,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'fog'
-gem 'unf_ext', '0.0.7.5'
+gem 'unf_ext', '>= 0.0.7.5'
