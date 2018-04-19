@@ -89,3 +89,5 @@ gem 'pry-doc'
 #画像のアップロード
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'fog'
