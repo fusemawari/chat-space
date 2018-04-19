@@ -90,4 +90,4 @@ gem 'pry-doc'
 gem 'carrierwave'
 gem 'mini_magick'
 
-gem 'fog'
+gem 'fog', '~> 2.0'
