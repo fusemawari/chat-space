@@ -473,6 +473,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   fog (~> 2.0)
+  fog-ovirt (~> 1.0.1)
   font-awesome-rails
   font-awesome-sass
   haml-rails

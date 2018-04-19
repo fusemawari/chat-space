@@ -91,3 +91,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'fog', '~> 2.0'
+gem 'fog-ovirt', '~> 1.0.1'
