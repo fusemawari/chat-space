@@ -1,6 +1,9 @@
 .header
-  %h2.group-ttl Sampleグループ
-  %p.group_member member..........
-  .header__edit
-    %a<
-      %p edit
+  %h2.group-ttl
+    = @group.name
+  %p.group_member
+    Member:
+    - @group.users.each do |g|
+      = g.name
+      .header__edit
+        = link_to "edit", edit_group_path(current_user)
