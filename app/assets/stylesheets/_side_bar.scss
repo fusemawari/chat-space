@@ -20,10 +20,11 @@
       float: right;
       .list {
         display: inline-block;
+        padding-top: 2px;
       }
       .icon {
         color: $white;
-        font-size: $side_header_font;
+        font-size: 15px;
       }
     }
   }
@@ -36,10 +37,12 @@
     width: 260px;
     .group {
       box-sizing: border-box;
-      padding: 20px 0 40px;
+      padding: 40px 0 40px;
       float:left;
       a {
+        display: block;
         text-decoration: none;
+        padding-bottom: 25px;
       }
       &__name {
         color: $white;

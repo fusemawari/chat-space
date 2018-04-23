@@ -73,21 +73,68 @@ body {height: 100%;}
       color: #333;
       font-size: 20px;
       font-weight:bold;
-      padding: 35px 0 15px 0;
+      padding: 35px 0 8px 0;
     }
     .group_member {
       color: #999;
       font-size: 12px;
     }
       .header__edit {
-        border: 1px solid $mainBlueColor;
-        padding: 12.5px 20px;
         position: absolute;
         top: 28px;
-        right: 40px;
+        right: 60px;
           p {
              color: $mainBlueColor;
           }
+          a {
+            display: inline-block;
+            width: 100px;
+            height: 44px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 54px;
+            outline: none;
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            border: 1px solid $mainBlueColor;
+            color: $mainBlueColor;
+            line-height: 40px;
+            overflow: hidden;
+          }
+          a:hover {
+            color: #fff;
+          }
+          a::before,
+          a::after  {
+            position: absolute;
+            z-index: -1;
+            display: block;
+            content: '';
+          }
+          a,
+          a::before,
+          a::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+          }
+          a::after {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transform: scale(.5);
+            transform: scale(.5);
+          }
+          a:hover::after {
+            background: $mainBlueColor;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+
       }
   }
   .messages {
@@ -113,6 +160,9 @@ body {height: 100%;}
         img {
           display:block;
         }
+      }
+      img {
+        display: block;
       }
     }
   }
@@ -144,7 +194,8 @@ body {height: 100%;}
       display: inline-block;
       width: 100px;
       text-align: center;
-      padding: 12px 0px;
+      padding: 13px 0px;
       color: $WhiteColor;
-      margin-left: 10px;
+      border: none;
     }
+
